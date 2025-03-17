@@ -1,0 +1,174 @@
+/* Section container */
+.biryani-section {
+  background-color: #faf8f5;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Wrapper */
+.biryani-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+.biryani-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.biryani-slogan {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e32b2b;
+  margin-bottom: 5px;
+}
+
+.biryani-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f1f1f;
+}
+
+/* (Optional) Arrows */
+.biryani-arrows {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.biryani-arrow {
+  font-size: 40px;
+  padding: 10px 25px;
+  background-color: #c91f37;
+  border-radius: 100px;
+  color: whitesmoke;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.biryani-arrow:hover {
+  background-color: #c91f37;
+}
+
+/* Slider slide */
+.biryani-slide {
+  padding: 0 10px;
+}
+
+/* Biryani card */
+.biryani-card {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.biryani-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  background-color: #ffa600;
+}
+
+/* Main image */
+.biryani-main-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 220px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Decorative images */
+.biryani-leaf,
+.biryani-burger,
+.biryani-leaf2 {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.biryani-leaf {
+  top: 20px;
+  right: 10px;
+  width: 100px;
+}
+
+.biryani-burger {
+  top: 50px;
+  left: 10px;
+  width: 100px;
+}
+
+.biryani-leaf2 {
+  top:250px;
+  left: 20px;
+  width: 100px;
+}
+
+/* Border element between image and text */
+.biryani-border {
+  width: 50px;
+  margin: 20px auto 10px auto;
+  border-bottom: 3px solid red;
+  transition: border-bottom 0.3s ease;
+  z-index: 2;
+}
+
+.biryani-card:hover .biryani-border {
+  border-bottom: 3px solid black;
+}
+
+/* Card text */
+.biryani-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-top: 10px;
+  text-align: center;
+  z-index: 3;
+  transition: color 0.3s ease;
+}
+
+.biryani-card-subtitle {
+  font-size: 1rem;
+  color: #e32b2b;
+  font-weight: 600;
+  text-align: center;
+  z-index: 3;
+  transition: color 0.3s ease;
+}
+
+/* Text color change on hover */
+.biryani-card:hover .biryani-card-title,
+.biryani-card:hover .biryani-card-subtitle {
+  color: #fff;
+}
+
+/* React Slick Overrides */
+.slick-dots li button:before {
+  color: #999;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #c91f37;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: transparent;
+}

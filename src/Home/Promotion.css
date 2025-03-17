@@ -1,0 +1,218 @@
+/* Entire promo section with black background */
+.promo-section {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+}
+
+/* Inner content at 95% width, centered */
+.promo-section-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* LEFT SIDE (TEXT) */
+.promo-text-container {
+  max-width: 650px;
+  flex: 1;
+}
+
+.promo-discount {
+  display: inline-block;
+  background-color: #f5c518;
+  color: #000;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.promo-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.promo-highlight {
+  color: #eab308;
+}
+
+.promo-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.promo-price {
+  color: #e32b2b;
+  font-weight: 600;
+}
+
+.promo-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Call-to-action button */
+.promo-cta-btn {
+  background-color: #f5c518;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.promo-cta-btn:hover {
+  background-color: #0f8f48;
+}
+
+/* RIGHT SIDE (IMAGES) */
+.promo-images-container {
+  position: relative;
+  max-width: 700px;
+  flex: 1;
+  display: flex;
+  
+}
+
+/* Main biryani dish image */
+.promo-biryani-img {
+  width: 100%;
+  max-width: 750px;
+  height: 500px;
+  z-index: 2;
+}
+
+/* Decorative absolute images */
+.promo-top-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  z-index: 3;
+}
+
+.promo-bottom-img {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  transform: translateX(-50%);
+  width: 150px;
+  z-index: 3;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .promo-section-content {
+    flex-direction: column;
+  }
+
+  .promo-text-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .promo-title {
+    font-size: 2rem;
+  }
+
+  .promo-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .promo-description {
+    font-size: 1rem;
+  }
+
+  .promo-biryani-img {
+    max-width: 500px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .promo-title {
+    font-size: 32px;
+  }
+
+  .promo-subtitle {
+    font-size: 24px;
+  }
+
+  .promo-description {
+    font-size: 20px;
+  }
+
+  .promo-cta-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .promo-biryani-img {
+    max-width: 400px;
+  }
+
+  .promo-top-img, 
+  .promo-bottom-img {
+    width: 100px;
+  } 
+  .promo-bottom-img {
+    width: 100px;
+    left: 80px;
+  }
+  .promo-top-img{
+    right: 80px;
+    width: 100px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .promo-title {
+    font-size: 32px;
+  }
+
+  .promo-subtitle {
+    font-size: 20px;
+  }
+
+  .promo-description {
+    font-size: 16px;
+  }
+
+  .promo-cta-btn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .promo-biryani-img {
+    max-width: 500px;
+  }
+
+  .promo-top-img, 
+  .promo-bottom-img {
+    width: 120px;
+  }
+  .promo-bottom-img{
+    left: 80px;
+  } 
+}
